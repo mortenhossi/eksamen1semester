@@ -1,0 +1,419 @@
+/* Global Styles
+-------------------------- */
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  font-family: 'lato', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5em;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+.center-tekst {
+  width: 70%;
+  margin-top: 75px;
+}
+
+.center-tekst h1 {
+  text-align: left;
+}
+
+.page-wrapper {
+  margin-bottom: 70px;
+}
+
+/* Nav styles
+-------------------------- */
+#logo img{
+  width: 4em;
+  margin-left: 2em;
+  margin-top: 0.5em;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  margin-left: auto;
+}
+
+nav li {
+list-style-type: none;
+font-size: 1em;
+margin-right: 3em;
+text-transform: uppercase;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: gray;
+}
+
+/* Header Styles
+-------------------------- */
+header {
+  text-align: left;
+  padding: 15em 0em;
+  margin-left: 2em;
+  margin-top: 4em;
+  background-image: url(../images/profilbillede.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-color: white;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+/* Portfolio Styles
+-------------------------- */
+.portfolio-wrapper {
+  display: flex;
+}
+
+#portfolio-information {
+  flex: 1;
+  height: auto;
+  color: white;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+}
+
+#portfolio-billeder {
+  flex: 1;
+  height: auto;
+}
+
+#portfolio-billeder img {
+  width: 100%;
+  height: 166.6px;
+  display: block;
+}
+
+.hover-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #1e1e1e;
+}
+
+.hover-container:hover .overlay {
+  opacity: 0.9;
+}
+
+#portfolio-billeder p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+/* Om mig Styles
+-------------------------- */
+.om-mig-wrapper {
+  display: flex;
+}
+#om-mig-billeder {
+  flex: 1;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#om-mig-information {
+  flex: 1;
+  height: auto;
+  color: white;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+}
+
+/* Kontakt Styles
+-------------------------- */
+.kontakt-wrapper {
+  display: flex;
+}
+
+#kontakt {
+  flex: 1;
+  height: auto;
+  color: white;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  padding: 1.5em 0;
+}
+
+.info .fa {
+  padding-right: 1em;
+}
+
+#kontaktform {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-top: 1.5em;
+}
+
+input {
+  width: 70%;
+}
+
+textarea {
+  width: 100%;
+}
+
+.send {
+  width: 70%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.send:hover {
+  background-color: gray;
+}
+
+input, textarea {
+  border: 1px solid #1e1e1e;
+  resize: vertical;
+  padding: 5px;
+  font-size: 1em;
+}
+
+/* Footer Styles
+-------------------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 70px;
+}
+
+footer p {
+  color: white;
+  margin-left: 2em;
+  font-size: 1em;
+}
+
+footer p .fa {
+  padding-right: 1em;
+}
+
+.social-wrapper {
+  margin-right: 2em;
+}
+
+.social-wrapper .fa {
+    width: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.social-wrapper .fa:hover {
+  opacity: 0.8;
+}
+
+.social-wrapper .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.social-wrapper .fa-instagram {
+  background: #cd486b;
+  color: white;
+}
+
+/* Subpages global
+-------------------------- */
+.main-portfolio {
+  margin-top: 7em;
+  width: 100%;
+}
+
+.main-portfolio a {
+  background-color: #1e1e1e;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.main-portfolio a:hover {
+  background-color: gray;
+}
+
+.projekt-wrapper img {
+  display: block;
+  margin: 5em auto 0 auto;
+}
+.info-wrapper {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+/* Ninja CSS3 animation
+-------------------------- */
+
+.animation-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+
+.ninja {
+  width: 300px;
+  height: 300px;
+  background-image: url(../images/ninja.jpg);
+  animation: play 1s steps(10) infinite;
+}
+
+.ninja2 {
+  width: 300px;
+  height: 300px;
+  background-image: url(../images/ninja2.jpg);
+  animation: play 1s steps(10) infinite;
+}
+
+.ghost {
+  width: 300px;
+  height: 300px;
+  background-image: url(../images/ghost.jpg);
+  animation: play 1s steps(10) infinite;
+}
+@keyframes play {
+  100% {background-position: -3000px;}
+}
+
+/* Responsiv til mobil
+-------------------------- */
+
+@media screen and (max-width: 599px) {
+
+  h1 {
+    font-size: 3em;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    padding: 12em 0;
+    margin-top: 4em;
+    color: white;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  header h1 {
+    margin-top: 3em;
+    font-size: 2.75em;
+  }
+
+  header h2 {
+    font-size: 1.5em;
+  }
+
+  .portfolio-wrapper, .kontakt-wrapper {
+    flex-direction: column;
+  }
+
+  .om-mig-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .social-wrapper {
+    margin-right: 0;
+  }
+
+  .projekt-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .animation-wrapper {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-items: center;
+    margin: 5em auto 0 auto;
+  }
+
+  .main-portfolio img {
+    display: inline;
+    margin: 0;
+    margin-top: 5em;
+    width: 100%;
+  }
+}
